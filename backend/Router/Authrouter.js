@@ -1,9 +1,11 @@
 import express from 'express'
-import { signup } from '../Controller/Authcontroller.js'
+import { signup,signin,google } from '../Controller/Authcontroller.js'
 const Authroute = express.Router()
 
 
 Authroute.post("/signup",signup)
+Authroute.post("/signin",signin)
+Authroute.post("/google",google)
 
 
 
